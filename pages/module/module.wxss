@@ -24,7 +24,11 @@
   height: 100rpx;
 }
 
-.viewBoxOn, .mediaBoxOn, .basicsBoxOn {
+.viewBoxOn{
+  height: 500rpx;
+}
+
+.mediaBoxOn, .basicsBoxOn {
   height: 340rpx;
 }
 

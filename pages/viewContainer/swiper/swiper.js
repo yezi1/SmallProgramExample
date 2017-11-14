@@ -6,13 +6,60 @@ Page({
    * 页面的初始数据
    */
   data: {
-    pageTitle: 'swiper'
+    pageTitle: 'swiper',
+    dot: false,
+    toggle: false,
+    cohesion: false,
+    direction: false,
+    automatic: 2000,
+    animation: 1000
   },
 
   Wxurl: function () {
     getapp.publicUrl();
   },
 
+  indicatorDots: function () {
+    this.data.dot = !this.data.dot;
+    this.setData({
+      dot: this.data.dot
+    });
+  },
+
+  autoplay: function () {
+    this.data.toggle = !this.data.toggle;
+    this.setData({
+      toggle: this.data.toggle
+    });
+  },
+
+  circular: function () {
+    this.data.cohesion = !this.data.cohesion;
+    this.setData({
+      cohesion: this.data.cohesion
+    });
+  },
+
+  vertical: function () {
+    this.data.direction = !this.data.direction;
+    this.setData({
+      direction: this.data.direction
+    });
+  },
+
+  toggleValue: function (event) {
+    this.data.automatic = event.detail.value;
+    this.setData({
+      automatic: this.data.automatic
+    });
+  },
+
+  spacingValue: function (event) {
+    this.data.animation = event.detail.value;
+    this.setData({
+      animation: this.data.animation
+    });    
+  },
 
   /**
    * 生命周期函数--监听页面加载

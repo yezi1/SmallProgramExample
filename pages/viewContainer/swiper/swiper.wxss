@@ -43,5 +43,14 @@ swiper{
   padding-left: 30rpx;
 }
 
+.slippage{
+  margin-top: 30px;
+  width: 90%;
+  margin: 30px auto 0px;
+}
 
+.slippageText{
+  font-size: 30rpx;
+  color: #666;
+}
 

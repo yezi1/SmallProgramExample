@@ -1,10 +1,12 @@
 {
   "pages":[
-    "pages/viewContainer/swiper/swiper",
+    
     "pages/module/module",
     "pages/viewContainer/view/view",
     "pages/viewContainer/srcoll-view/srcoll-view",
-    
+    "pages/viewContainer/swiper/swiper",
+    "pages/viewContainer/cover-view/cover-view",
+    "pages/viewContainer/movable-view/movable-view",
     "pages/basics/text/text",
     "pages/basics/icon/icon",
     "pages/basics/progress/progress",

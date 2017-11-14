@@ -6,7 +6,7 @@
 </view>
 
 <scroll-view style="height: {{ getHeight }}px;" scroll-y='true' scroll-with-animation='true'>
-  <swiper indicator-dots='true' autoplay='true'>
+  <swiper indicator-dots='{{ dot }}' autoplay='{{ toggle }}' interval='{{ automatic }}' duration='{{ animation }}' circular='{{ cohesion }}' vertical='{{ direction }}'>
     <view class='swiperBox'>
       <swiper-item>A</swiper-item>
       <swiper-item>B</swiper-item>
@@ -17,15 +17,34 @@
   <view class='weui-cells'>
     <view class='swiperSwitch'>
       <view>指示点</view>
-      <switch></switch>
+      <switch checked='{{ dot }}' bindchange='indicatorDots'></switch>
     </view>
     <view class='weui-cell'></view>
     <view class='swiperSwitch'>
       <view>自动播放</view>
-      <switch class='wx-switch-input'></switch>
+      <switch checked='{{ toggle }}' bindchange='autoplay'></switch>
+    </view>
+    <view class='weui-cell'></view>
+    <view class='swiperSwitch'>
+      <view>是否衔接滚动</view>
+      <switch checked='{{ cohesion }}' bindchange='circular'></switch>
+    </view>
+    <view class='weui-cell'></view>
+    <view class='swiperSwitch'>
+      <view>滑动方向是否为纵向</view>
+      <switch checked='{{ direction }}' bindchange='vertical'></switch>
     </view>
   </view>
   
+  <view class='slippage'>
+    <view class='slippageText'>幻灯片切换时长(ms)</view>
+    <slider show-value='true' min='1000' max='8000' value='{{ automatic }}' bindchange='toggleValue'></slider>
+  </view>
+
+  <view class='slippage'>
+    <view class='slippageText'>自动播放间隔时长(ms)</view>
+    <slider show-value='true' min='500' max='2000' value='{{ animation }}' bindchange='spacingValue'></slider>
+  </view>
 
 </scroll-view>
 

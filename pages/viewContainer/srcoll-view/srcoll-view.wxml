@@ -12,7 +12,7 @@
     <text>纵向滚动</text>
   </view>
 
-  <scroll-view class='longitudinal Scroll'  >
+  <scroll-view class='Vertical ScrollBox' scroll-y='true'>
     <view>A</view>
     <view>B</view>
     <view>C</view>
@@ -23,10 +23,12 @@
     <text>横向滚动</text>
   </view>
 
-  <scroll-view class='longitudinal Scroll'  scroll-x='true' >
-    <view>A</view>
-    <view>B</view>
-    <view>C</view>
+  <scroll-view class='ScrollBox'  scroll-x='true' >
+    <view class='HorizontalBox'>
+      <view>A</view>
+      <view>B</view>
+      <view>C</view>  
+    </view>
   </scroll-view>
 
 </scroll-view>
