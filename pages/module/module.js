@@ -32,7 +32,7 @@ Page({
      * 公共数据
      */
     wx.request({
-      url: getapp.globalIp() + '/Wxpractise/data/data.json',
+      url: getapp.globalIp() + '/SmallProgramExample/data/data.json',
       data: {},
       header: {
         "Content-Type": "json"

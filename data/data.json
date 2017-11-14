@@ -18,6 +18,14 @@
         {
           "text": "swiper",
           "gotoUrl": "/pages/viewContainer/swiper/swiper"
+        },
+        {
+          "text": "cover-view",
+          "gotoUrl": "/pages/viewContainer/cover-view/cover-view"
+        },
+        {
+          "text": "movable-view",
+          "gotoUrl": "/pages/viewContainer/movable-view/movable-view"
         }
       ]
     },
