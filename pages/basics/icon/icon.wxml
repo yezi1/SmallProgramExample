@@ -1,0 +1,10 @@
+<import src='../../header-template/header-template.wxml'/>
+<import src='../../footer-template/footer-template.wxml'/>
+
+<view>
+  <template is='headerTemplate' data='{{ pageTitle }}' />
+</view>
+
+<view catchtap='Wxurl'>
+  <template is='footerTemplate' />
+</view>

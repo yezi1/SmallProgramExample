@@ -1,0 +1,6 @@
+<template name='headerTemplate'>
+  <view style='height: 65px; display: flex; flex-direction: column; justify-content: center; align-items: center; margin-bottom: 20px;'>
+    <text>{{ pageTitle }}</text>
+    <view style='height: 1px; width: 200rpx; background-color: rgba(102,102,102,0.7); margin-top: 20rpx;'></view>
+  </view>
+</template>

@@ -1,0 +1,63 @@
+{
+  "pages":[
+    "pages/viewContainer/swiper/swiper",
+    "pages/module/module",
+    "pages/viewContainer/view/view",
+    "pages/viewContainer/srcoll-view/srcoll-view",
+    
+    "pages/basics/text/text",
+    "pages/basics/icon/icon",
+    "pages/basics/progress/progress",
+    "pages/form/button/button",
+    "pages/form/checkbox/checkbox",
+    "pages/form/form/form",
+    "pages/form/input/input",
+    "pages/form/label/label",
+    "pages/form/picker/picker",
+    "pages/form/radio/radio",
+    "pages/form/slider/slider",
+    "pages/form/switch/switch",
+    "pages/form/textarea/textarea",
+    "pages/nav/navigator/navigator",
+    "pages/media/image/image",
+    "pages/media/audio/audio",
+    "pages/media/video/video",
+    "pages/map/map",
+    "pages/canvas/canvas"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#000000",
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "微信小程序示例",
+    "backgroundColor": "white",
+    "enablePullDownRefresh": true,
+    "onReachBottomDistance": "50"
+  },
+  "tabBar": {
+    "selectedColor": "#3CB371",
+    "backgroundColor": "white",
+    "borderStyle": "white",
+    "position": "bottom",
+    "list": [
+      {
+        "pagePath": "pages/module/module",
+        "text": "组件",
+        "iconPath": "/images/module/components.png",
+        "selectedIconPath": "/images/module/components_on.png"
+      },
+      {
+        "pagePath": "pages/module/module",
+        "text": "接口",
+        "iconPath": "/images/module/interfaces.png",
+        "selectedIconPath": "/images/module/interfaces_on.png"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": "60000",
+    "connectSocket": "60000",
+    "uploadFile": "60000",
+    "downloadFile": "60000"
+  },
+  "debug": false
+}

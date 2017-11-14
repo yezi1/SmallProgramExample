@@ -1,0 +1,5 @@
+<template name='footerTemplate'>
+  <view style='height: 30px; display: flex; justify-content: center; align-items: center;'>
+    <text style='color: #3CB371;'>微信小程序示例页</text>
+  </view>
+</template>

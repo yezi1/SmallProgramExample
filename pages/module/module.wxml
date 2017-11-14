@@ -1,0 +1,26 @@
+<view class='homePageBox'>
+  <view class='homePage-title'>
+    <text>微信小程序基本功能集合</text>
+  </view>
+
+  <block wx:for='{{ datas }}'>
+      <view class='{{ item.state?item.name + "BoxOn moduleBox":"viewBoxOff moduleBox" }}'>
+          <view class='menuContent' catchtap='publicDropDown' data-item='{{ item }}' data-index='{{ index }}' >
+              <text>{{ item.title }}</text>
+              <view class='menuIcon'>
+                  <image src='{{ item.titleIcon }}'></image>
+              </view>
+          </view>
+          <view class='menuList'>
+              <block wx:for="{{ item.list }}">
+                  <navigator  class='menuListBox' catchtap='publicGoTo' url='{{ item.gotoUrl }}'>
+                      <text>{{ item.text }}</text>
+                      <view class='listIcon'>
+                          <image src='/images/module/leftArrow.svg'></image>
+                      </view>
+                  </navigator >
+              </block>
+          </view>
+      </view>
+  </block>
+</view>

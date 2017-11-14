@@ -1,0 +1,53 @@
+/* pages/viewContainer/view/view.wxss */
+.row{
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  height: 150px;
+  margin: 30px auto;
+}
+
+.row>view{
+  flex: 1;
+  height: 150px;
+  line-height: 150px;
+  text-align: center;
+}
+
+.row>view:nth-child(1){
+  background-color: #008B00;
+}
+
+.row>view:nth-child(2){
+  background-color: #104E8B;
+}
+
+.row>view:nth-child(3){
+  background-color: #FA8072;
+}
+
+.column{
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  height: 300px;
+  margin: 30px auto;
+}
+
+.column>view{
+  text-align: center;
+  flex: 1;
+  line-height: 100px;
+}
+
+.column>view:nth-child(1){
+  background-color: #008B00;
+}
+
+.column>view:nth-child(2){
+  background-color: #104E8B;
+}
+
+.column>view:nth-child(3){
+  background-color: #FA8072;
+}

@@ -1,0 +1,155 @@
+{
+  "data": [
+    {
+      "title": "视图容器",
+      "name": "view",
+      "postId": 0,
+      "state": false,
+      "titleIcon": "/images/module/iconfont-fangzhipige.svg",
+      "list": [
+        {
+          "text": "view",
+          "gotoUrl": "/pages/viewContainer/view/view"
+        },
+        {
+          "text": "scroll-view",
+          "gotoUrl": "/pages/viewContainer/srcoll-view/srcoll-view"
+        },
+        {
+          "text": "swiper",
+          "gotoUrl": "/pages/viewContainer/swiper/swiper"
+        }
+      ]
+    },
+    {
+      "title": "基础内容",
+      "name": "basics",
+      "postId": 1,
+      "state": false,
+      "titleIcon": "/images/module/text.svg",
+      "list": [
+        {
+          "text": "text",
+          "gotoUrl": "/pages/basics/text/text"
+        },
+        {
+          "text": "icon",
+          "gotoUrl": "/pages/basics/icon/icon"
+        },
+        {
+          "text": "progress",
+          "gotoUrl": "/pages/basics/progress/progress"
+        }
+      ]
+    },
+    {
+      "title": "表单组件",
+      "name": "form",
+      "postId": 2,
+      "state": false,
+      "titleIcon": "/images/module/from.svg",
+      "list": [
+        {
+          "text": "button",
+          "gotoUrl": "/pages/form/button/button"
+        },
+        {
+          "text": "checkbox",
+          "gotoUrl": "/pages/form/checkbox/checkbox"
+        },
+        {
+          "text": "form",
+          "gotoUrl": "/pages/form/form/form"
+        },
+        {
+          "text": "input",
+          "gotoUrl": "/pages/form/input/input"
+        },
+        {
+          "text": "label",
+          "gotoUrl": "/pages/form/label/label"
+        },
+        {
+          "text": "picker",
+          "gotoUrl": "/pages/form/picker/picker"
+        },
+        {
+          "text": "radio",
+          "gotoUrl": "/pages/form/radio/radio"
+        },
+        {
+          "text": "slider",
+          "gotoUrl": "/pages/form/slider/slider"
+        },
+        {
+          "text": "switch",
+          "gotoUrl": "/pages/form/switch/switch"
+        },
+        {
+          "text": "textarea",
+          "gotoUrl": "/pages/form/textarea/textarea"
+        }
+      ]
+    },
+    {
+      "title": "导航",
+      "name": "nav",
+      "postId": 3,
+      "state": false,
+      "titleIcon": "/images/module/nav.svg",
+      "list": [
+        {
+          "text": "navigator",
+          "gotoUrl": "/pages/nav/navigator/navigator"
+        }
+      ]
+    },
+    {
+      "title": "媒体组件",
+      "name": "media",
+      "postId": 4,
+      "state": false,
+      "titleIcon": "/images/module/media.svg",
+      "list": [
+        {
+          "text": "image",
+          "gotoUrl": "/pages/media/image/image"
+        },
+        {
+          "text": "audio",
+          "gotoUrl": "/pages/media/audio/audio"
+        },
+        {
+          "text": "video",
+          "gotoUrl": "/pages/media/video/video"
+        }
+      ]
+    },
+    {
+      "title": "地图",
+      "name": "map",
+      "postId": 5,
+      "state": false,
+      "titleIcon": "/images/module/map.svg",
+      "list": [
+        {
+          "text": "map",
+          "gotoUrl": "/pages/map/map"
+        }
+      ]
+    },
+    {
+      "title": "画布",
+      "name": "canvas",
+      "postId": 6,
+      "state": false,
+      "titleIcon": "/images/module/line.svg",
+      "list": [
+        {
+          "text": "canvas",
+          "gotoUrl": "/pages/canvas/canvas"
+        }
+      ]
+    }
+  ]
+}

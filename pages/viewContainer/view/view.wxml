@@ -1,0 +1,36 @@
+<import src='../../header-template/header-template.wxml'/>
+<import src='../../footer-template/footer-template.wxml'/>
+
+<view>
+  <template is='headerTemplate' data='{{ pageTitle }}' />
+</view>
+
+<scroll-view style="height: {{ getHeight }}px;" scroll-y='true' scroll-with-animation='true'>
+
+  <view class='publicBox'>
+    <text>flex-direction: row</text>
+    <text>横向布局</text>
+  </view>
+
+  <view class='row'>
+   <view>A</view>
+   <view>B</view>
+   <view>C</view>
+  </view>
+
+  <view class='publicBox'>
+    <text>flex-direction: column</text>
+    <text>纵向布局</text>
+  </view>
+
+  <view class='column'>
+   <view>A</view>
+   <view>B</view>
+   <view>C</view>
+  </view>
+
+</scroll-view>
+
+<view catchtap='Wxurl'>
+  <template is='footerTemplate' />
+</view>

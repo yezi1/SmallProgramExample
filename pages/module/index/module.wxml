@@ -1,0 +1,221 @@
+<view class='homePageBox'>
+  <view class='homePage-title'>
+    <text>微信小程序基本功能集合</text>
+  </view>
+
+  <!-- 视图容器 -->
+  <view class='{{viewState?"viewBoxOn moduleBox":"viewBoxOff moduleBox"}}'>
+    <view class='menuContent' catchtap='viewDropDown'>
+      <text>视图容器</text>
+      <view class='menuIcon'>
+        <image src='/images/module/iconfont-fangzhipige.svg'></image>
+      </view>
+    </view>
+    <view class='menuList'>
+      <view class='menuListBox' catchtap='viewPage'>
+        <text>view</text>
+        <view class='listIcon'>
+          <image src='/images/module/leftArrow.svg'></image>
+        </view>
+      </view>
+      <view class='menuListBox' catchtap='scrollViewPage'>
+        <text>scroll-view</text>
+        <view class='listIcon'>
+          <image src='/images/module/leftArrow.svg'></image>
+        </view>
+      </view>
+      <view class='menuListBox' catchtap='swiperPage'>
+        <text>swiper</text>
+        <view class='listIcon'>
+          <image src='/images/module/leftArrow.svg'></image>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <!-- 基础内容 -->
+  <view class='moduleBox' animation="{{animationData}}">
+    <view class='menuContent' catchtap='basicsdropDown'>
+      <text>基础内容</text>
+      <view class='menuIcon'>
+        <image src='/images/module/text.svg'></image>
+      </view>
+    </view>
+    <view class='menuList'>
+      <view class='menuListBox' catchtap='textPage'>
+        <text>text</text>
+        <view class='listIcon'>
+          <image src='/images/module/leftArrow.svg'></image>
+        </view>
+      </view>
+      <view class='menuListBox' catchtap='iconPage'>
+        <text>icon</text>
+        <view class='listIcon'>
+          <image src='/images/module/leftArrow.svg'></image>
+        </view>
+      </view>
+      <view class='menuListBox' catchtap='progressPage'>
+        <text>progress</text>
+        <view class='listIcon'>
+          <image src='/images/module/leftArrow.svg'></image>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <!-- 表单组件 -->
+  <view class='{{formState?"formBoxOn moduleBox":"viewBoxOff moduleBox"}}'>
+    <view class='menuContent' catchtap='formDropDown'>
+      <text>表单组件</text>
+      <view class='menuIcon'>
+        <image src='/images/module/from.svg'></image>
+      </view>
+    </view>
+    <view class='menuList'>
+      <view class='menuListBox' catchtap='buttonPage'>
+        <text>button</text>
+        <view class='listIcon'>
+          <image src='/images/module/leftArrow.svg'></image>
+        </view>
+      </view>
+      <view class='menuListBox' catchtap='checkPage'>
+        <text>checkbox</text>
+        <view class='listIcon'>
+          <image src='/images/module/leftArrow.svg'></image>
+        </view>
+      </view>
+      <view class='menuListBox' catchtap='formPage'>
+        <text>form</text>
+        <view class='listIcon'>
+          <image src='/images/module/leftArrow.svg'></image>
+        </view>
+      </view>
+      <view class='menuListBox' catchtap='inputPage'>
+        <text>input</text>
+        <view class='listIcon'>
+          <image src='/images/module/leftArrow.svg'></image>
+        </view>
+      </view>
+      <view class='menuListBox' catchtap='labelPage'>
+        <text>label</text>
+        <view class='listIcon'>
+          <image src='/images/module/leftArrow.svg'></image>
+        </view>
+      </view>
+      <view class='menuListBox' catchtap='pickerPage'>
+        <text>picker</text>
+        <view class='listIcon'>
+          <image src='/images/module/leftArrow.svg'></image>
+        </view>
+      </view>
+      <view class='menuListBox' catchtap='radioPage'>
+        <text>radio</text>
+        <view class='listIcon'>
+          <image src='/images/module/leftArrow.svg'></image>
+        </view>
+      </view>
+      <view class='menuListBox' catchtap='sliderPage'>
+        <text>slider</text>
+        <view class='listIcon'>
+          <image src='/images/module/leftArrow.svg'></image>
+        </view>
+      </view>
+      <view class='menuListBox' catchtap='switchPage'>
+        <text>switch</text>
+        <view class='listIcon'>
+          <image src='/images/module/leftArrow.svg'></image>
+        </view>
+      </view>
+      <view class='menuListBox' catchtap='textareaPage'>
+        <text>textarea</text>
+        <view class='listIcon'>
+          <image src='/images/module/leftArrow.svg'></image>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <!-- 导航 -->
+  <view class='{{navState?"navBoxOn moduleBox":"viewBoxOff moduleBox"}}'>
+    <view class='menuContent' catchtap='navDropDown'>
+      <text>导航</text>
+      <view class='menuIcon'>
+        <image src='/images/module/nav.svg'></image>
+      </view>
+    </view>
+    <view class='menuList'>
+      <view class='menuListBox' catchtap='navigatorPage'>
+        <text>navigator</text>
+        <view class='listIcon'>
+          <image src='/images/module/leftArrow.svg'></image>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <!-- 媒体组件 -->
+  <view class='{{mediaState?"mediaBoxOn moduleBox":"viewBoxOff moduleBox"}}'>
+    <view class='menuContent' catchtap='mediaDropDown'>
+      <text>媒体组件</text>
+      <view class='menuIcon'>
+        <image src='/images/module/media.svg'></image>
+      </view>
+    </view>
+    <view class='menuList'>
+      <view class='menuListBox' catchtap='imagePage'>
+        <text>image</text>
+        <view class='listIcon'>
+          <image src='/images/module/leftArrow.svg'></image>
+        </view>
+      </view>
+      <view class='menuListBox' catchtap='audioPage'>
+        <text>audio</text>
+        <view class='listIcon'>
+          <image src='/images/module/leftArrow.svg'></image>
+        </view>
+      </view>
+      <view class='menuListBox' catchtap='videoPage'>
+        <text>video</text>
+        <view class='listIcon'>
+          <image src='/images/module/leftArrow.svg'></image>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <!-- 地图 -->
+  <view class='{{mapState?"mapBoxOn moduleBox":"viewBoxOff moduleBox"}}'>
+    <view class='menuContent' catchtap='mapDropDown'>
+      <text>地图</text>
+      <view class='menuIcon'>
+        <image src='/images/module/map.svg'></image>
+      </view>
+    </view>
+    <view class='menuList'>
+      <view class='menuListBox' catchtap='mapPage'>
+        <text>map</text>
+        <view class='listIcon'>
+          <image src='/images/module/leftArrow.svg'></image>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <!-- 画布 -->
+  <view class='{{canvasState?"canvasBoxOn moduleBox":"viewBoxOff moduleBox"}}'>
+    <view class='menuContent' catchtap='canvasDropDown'>
+      <text>画布</text>
+      <view class='menuIcon'>
+        <image src='/images/module/line.svg'></image>
+      </view>
+    </view>
+    <view class='menuList'>
+      <view class='menuListBox' catchtap='canvasPage'>
+        <text>canvas</text>
+        <view class='listIcon'>
+          <image src='/images/module/leftArrow.svg'></image>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

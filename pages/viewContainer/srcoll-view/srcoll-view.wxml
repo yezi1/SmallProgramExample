@@ -1,0 +1,36 @@
+<import src='../../header-template/header-template.wxml'/>
+<import src='../../footer-template/footer-template.wxml'/>
+
+<view>
+  <template is='headerTemplate' data='{{ pageTitle }}' />
+</view>
+
+<scroll-view style="height: {{ getHeight }}px;" scroll-y='true' scroll-with-animation='true'> 
+
+  <view class='publicTitle'>
+    <text>Vertical Scroll</text>
+    <text>纵向滚动</text>
+  </view>
+
+  <scroll-view class='longitudinal Scroll'  >
+    <view>A</view>
+    <view>B</view>
+    <view>C</view>
+  </scroll-view>
+
+  <view class='publicTitle'>
+    <text>Horizontal Scroll</text>
+    <text>横向滚动</text>
+  </view>
+
+  <scroll-view class='longitudinal Scroll'  scroll-x='true' >
+    <view>A</view>
+    <view>B</view>
+    <view>C</view>
+  </scroll-view>
+
+</scroll-view>
+
+<view catchtap='Wxurl'>
+  <template is='footerTemplate' />
+</view>

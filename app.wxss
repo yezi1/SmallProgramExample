@@ -1,0 +1,21 @@
+@import './weui.wxss';
+text{
+  font-family: arial;
+  font-size: 30rpx;
+  color: #666;
+}
+
+page{
+  background-color: #f2f2f2;
+}
+
+.publicBox{
+  display: flex;
+  flex-direction: column;
+  padding-left: 1em;
+}
+
+.publicBox>text{
+  font-size: 30rpx;
+  margin-bottom: 5px;
+}

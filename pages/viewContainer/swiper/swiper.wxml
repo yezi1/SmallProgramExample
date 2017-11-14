@@ -1,0 +1,34 @@
+<import src='../../header-template/header-template.wxml' />
+<import src='../../footer-template/footer-template.wxml' />
+
+<view>
+  <template is='headerTemplate' data='{{ pageTitle }}' />
+</view>
+
+<scroll-view style="height: {{ getHeight }}px;" scroll-y='true' scroll-with-animation='true'>
+  <swiper indicator-dots='true' autoplay='true'>
+    <view class='swiperBox'>
+      <swiper-item>A</swiper-item>
+      <swiper-item>B</swiper-item>
+      <swiper-item>C</swiper-item>
+    </view>
+  </swiper>
+
+  <view class='weui-cells'>
+    <view class='swiperSwitch'>
+      <view>指示点</view>
+      <switch></switch>
+    </view>
+    <view class='weui-cell'></view>
+    <view class='swiperSwitch'>
+      <view>自动播放</view>
+      <switch class='wx-switch-input'></switch>
+    </view>
+  </view>
+  
+
+</scroll-view>
+
+<view catchtap='Wxurl'>
+  <template is='footerTemplate' />
+</view>

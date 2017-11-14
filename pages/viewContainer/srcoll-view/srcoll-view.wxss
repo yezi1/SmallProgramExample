@@ -1,0 +1,40 @@
+/* pages/viewContainer/srcoll-view/srcoll-view.wxss */
+.ScrollBox{
+  overflow: hidden;
+  height: 300rpx; 
+  width: 600rpx;
+  margin: 30px auto;
+  text-align: center;
+  line-height: 300rpx;
+  font-size: 36rpx;
+  color: white;
+}
+
+.ScrollBox view:nth-child(1){
+  background-color: #008B00;
+}
+
+.ScrollBox view:nth-child(2){
+  background-color: #104E8B;
+}
+
+.ScrollBox view:nth-child(3){
+  background-color: #FA8072;
+}
+
+.Vertical view{
+  width: 600rpx;
+  height: 300rpx;
+}
+
+.HorizontalBox{
+  height: 300rpx;
+  width: 1800rpx;
+}
+
+.HorizontalBox view{
+  float: left;
+  width: 600rpx;
+  height: 300rpx;
+}
+

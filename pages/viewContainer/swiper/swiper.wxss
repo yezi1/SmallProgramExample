@@ -1,0 +1,47 @@
+/* pages/viewContainer/swiper/swiper.wxss */
+swiper{
+  width: 600rpx;
+  height: 300rpx;
+  margin: 30rpx auto;
+}
+
+.swiperBox{
+  height: 300rpx;
+  width: 1800rpx;
+  text-align: center;
+  line-height: 300rpx;
+}
+
+.swiperBox swiper-item{
+  float: left;
+  width: 600rpx;
+  height: 300rpx;
+}
+
+.swiperBox swiper-item:nth-child(1){
+  background-color: #008B00;  
+}
+
+.swiperBox swiper-item:nth-child(2){
+  background-color: #104E8B;  
+}
+
+.swiperBox swiper-item:nth-child(3){
+  background-color: #FA8072;  
+}
+
+.weui-cell{
+  padding: 0;
+}
+
+.swiperSwitch{
+  display: flex;
+  justify-content: space-between;
+  height: 80rpx;
+  align-items:center;
+  font-size: 30rpx;
+  padding-left: 30rpx;
+}
+
+
+
