@@ -1,12 +1,30 @@
 const getapp = new getApp();
-// pages/basics/text/text.js
+var initData = 'this is first line\nthis is second line'
+var extraLine = [];
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    pageTitle: 'text'
+    pageTitle: 'text',
+    text: initData
+  },
+  
+  add: function (e) {
+    extraLine.push('other line')
+    this.setData({
+      text: initData + '\n' + extraLine.join('\n')
+    })
+  },
+
+  remove: function (e) {
+    if (extraLine.length > 0) {
+      extraLine.pop()
+      this.setData({
+        text: initData + '\n' + extraLine.join('\n')
+      })
+    }
   },
 
   Wxurl: function () {
@@ -17,7 +35,10 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-  
+    let getHeight = getapp.equipmentHeight();
+    this.setData({
+      getHeight: getHeight
+    });
   },
 
   /**

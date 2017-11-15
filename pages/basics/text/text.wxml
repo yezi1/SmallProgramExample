@@ -1,9 +1,19 @@
-<import src='../../header-template/header-template.wxml'/>
-<import src='../../footer-template/footer-template.wxml'/>
+<import src='../../header-template/header-template.wxml' />
+<import src='../../footer-template/footer-template.wxml' />
 
 <view>
   <template is='headerTemplate' data='{{ pageTitle }}' />
 </view>
+
+<scroll-view style="height: {{ getHeight }}px;" scroll-y='true' scroll-with-animation='true'>
+  <view class="btn-area">
+    <view class="body-view">
+      <text selectable='true'>{{text}}</text>
+      <button bindtap="add">add line</button>
+      <button bindtap="remove">remove line</button>
+    </view>
+  </view>
+</scroll-view>
 
 <view catchtap='Wxurl'>
   <template is='footerTemplate' />

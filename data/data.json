@@ -47,6 +47,10 @@
         {
           "text": "progress",
           "gotoUrl": "/pages/basics/progress/progress"
+        },
+        {
+          "text": "rich-text",
+          "gotoUrl": "/pages/basics/rich-text/rich-text"
         }
       ]
     },
@@ -80,6 +84,10 @@
         {
           "text": "picker",
           "gotoUrl": "/pages/form/picker/picker"
+        },
+        {
+          "text": "picker-view",
+          "gotoUrl": "/pages/form/picker-view/picker-view"
         },
         {
           "text": "radio",
@@ -130,6 +138,10 @@
         {
           "text": "video",
           "gotoUrl": "/pages/media/video/video"
+        },
+        {
+          "text": "camera",
+          "gotoUrl": "/pages/media/camera/camera"
         }
       ]
     },

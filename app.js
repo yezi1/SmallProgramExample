@@ -48,6 +48,7 @@ App({
   },
 
   globalIp: function () {
-    return 'http://169.254.124.145';
+    // return 'http://169.254.124.145';     
+    return 'http://192.168.80.1';
   }
 })

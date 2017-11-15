@@ -1,9 +1,30 @@
-<import src='../../header-template/header-template.wxml'/>
-<import src='../../footer-template/footer-template.wxml'/>
+<import src='../../header-template/header-template.wxml' />
+<import src='../../footer-template/footer-template.wxml' />
 
 <view>
   <template is='headerTemplate' data='{{ pageTitle }}' />
 </view>
+
+<scroll-view style="height: {{ getHeight }}px;" scroll-y='true' scroll-with-animation='true'>
+  <view class="group">
+    <block wx:for="{{iconSize}}">
+      <icon type="success" size="{{item}}" />
+    </block>
+  </view>
+
+  <view class="group">
+    <block wx:for="{{iconType}}">
+      <icon type="{{item}}" size="40" />
+    </block>
+  </view>
+
+
+  <view class="group">
+    <block wx:for="{{iconColor}}">
+      <icon type="success" size="40" color="{{item}}" />
+    </block>
+  </view>
+</scroll-view>
 
 <view catchtap='Wxurl'>
   <template is='footerTemplate' />

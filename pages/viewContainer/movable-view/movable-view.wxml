@@ -1,15 +1,28 @@
-<view class="section">
-  <view class="section__title">movable-view区域小于movable-area</view>
-  <movable-area style="height: 200px;width: 200px;background: red;">
-    <movable-view style="height: 50px; width: 50px; background: blue;" x="{{x}}" y="{{y}}" direction="all">
-    </movable-view>
-  </movable-area>
-  <view class="btn-area">
-    <button size="mini" bindtap="tap">click me to move to (30px, 30px)</button>
+<import src='../../header-template/header-template.wxml' />
+<import src='../../footer-template/footer-template.wxml' />
+
+<view>
+  <template is='headerTemplate' data='{{ pageTitle }}' />
+</view>
+
+<scroll-view style="height: {{ getHeight }}px;" scroll-y='true' scroll-with-animation='true'>
+  <view class="section">
+    <view class="section__title">movable-view区域小于movable-area</view>
+    <movable-area style="height: 200px;width: 200px;background: red;">
+      <movable-view style="height: 50px; width: 50px; background: blue;" x="{{x}}" y="{{y}}" direction="all" inertia='true' friction='10' out-of-bounds='false' damping='2'>
+      </movable-view>
+    </movable-area>
+    <view class="btn-area">
+      <button size="mini" bindtap="tap">click me to move to (30px, 30px)</button>
+    </view>
+    <view class="section__title">movable-view区域大于movable-area</view>
+    <movable-area style="height: 100px;width: 100px;background: red;" direction="all">
+      <movable-view style="height: 200px; width: 200px; background: blue;">
+      </movable-view>
+    </movable-area>
   </view>
-  <view class="section__title">movable-view区域大于movable-area</view>
-  <movable-area style="height: 100px;width: 100px;background: red;" direction="all">
-    <movable-view style="height: 200px; width: 200px; background: blue;">
-    </movable-view>
-  </movable-area>
+</scroll-view>
+
+<view catchtap='Wxurl'>
+  <template is='footerTemplate' />
 </view>

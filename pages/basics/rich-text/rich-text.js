@@ -1,22 +1,28 @@
-// pages/viewContainer/movable-view/movable-view.js
-var getapp = new getApp();
+const getapp = new getApp();
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    pageTitle: 'movable-view',
-    x: 0,
-    y: 0
+    pageTitle: 'text',
+    nodes: [{
+      name: 'div',
+      attrs: {
+        class: 'div_class',
+        style: 'line-height: 60px; color: red;'
+      },
+      children: [{
+        type: 'text',
+        text: 'Hello&nbsp;World!'
+      }]
+    }]
   },
 
-  tap: function (e) {
-    this.setData({
-      x: 30,
-      y: 30
-    });
+  tap() {
+    console.log('tap')
   },
+
 
   Wxurl: function () {
     getapp.publicUrl();

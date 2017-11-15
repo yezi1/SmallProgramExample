@@ -1,35 +1,18 @@
-// pages/viewContainer/movable-view/movable-view.js
-var getapp = new getApp();
+// pages/form/picker-view/picker-view.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    pageTitle: 'movable-view',
-    x: 0,
-    y: 0
-  },
-
-  tap: function (e) {
-    this.setData({
-      x: 30,
-      y: 30
-    });
-  },
-
-  Wxurl: function () {
-    getapp.publicUrl();
+  
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    let getHeight = getapp.equipmentHeight();
-    this.setData({
-      getHeight: getHeight
-    });
+  
   },
 
   /**

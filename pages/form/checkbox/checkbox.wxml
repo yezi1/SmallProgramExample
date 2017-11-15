@@ -5,6 +5,12 @@
   <template is='headerTemplate' data='{{ pageTitle }}' />
 </view>
 
+<checkbox-group bindchange="checkboxChange">
+  <label class="checkbox" wx:for="{{items}}">
+    <checkbox value="{{item.name}}" checked="{{item.checked}}"/>{{item.value}}
+  </label>
+</checkbox-group>
+
 <view catchtap='Wxurl'>
   <template is='footerTemplate' />
 </view>

@@ -1,25 +1,41 @@
-// pages/viewContainer/cover-view/cover-view.js
+const getapp = new getApp();
+// pages/nav/navigator/navigator.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-  
+    pageTitle: 'cover-view'
+  },
+
+  Wxurl: function () {
+    getapp.publicUrl();
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-  
+    let getHeight = getapp.equipmentHeight();
+    this.setData({
+      getHeight: getHeight
+    });
   },
 
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
-  onReady: function () {
+  onReady() {
+    this.videoCtx = wx.createVideoContext('myVideo')
+  },
   
+  play() {
+    this.videoCtx.play()
+  },
+
+  pause() {
+    this.videoCtx.pause()
   },
 
   /**

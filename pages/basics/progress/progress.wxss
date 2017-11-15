@@ -1,1 +1,4 @@
 /* pages/basics/progress/progress.wxss */
+progress{
+  margin-bottom: 15px;
+}
